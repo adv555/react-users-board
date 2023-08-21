@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import { Divider, Paper, Typography } from '@mui/material';
 
 interface Props {
-  children: React.ReactNode
+  children: React.ReactNode;
 }
 
 export const AppContainer: FC<Props> = React.memo(({ children }) => {
@@ -11,7 +11,7 @@ export const AppContainer: FC<Props> = React.memo(({ children }) => {
       elevation={10}
       style={{
         padding: '20px',
-        width: '30%',
+        width: '50%',
         position: 'absolute',
         top: '50%',
         left: '50%',
@@ -22,8 +22,7 @@ export const AppContainer: FC<Props> = React.memo(({ children }) => {
         variant="h2"
         style={{ textAlign: 'center', marginBottom: '16px' }}
       >
-        Users`
-        board
+        Users` board
       </Typography>
 
       {children}
